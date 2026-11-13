@@ -1,0 +1,5 @@
+case,most_common_top,top_agreement,agreement_with_SHAP_top,mean_weighted_R2
+TP,EducationLevel,1.0,1.0,0.2801945051753156
+FP,EducationLevel,1.0,0.0,0.22890543801459282
+FN,InterviewScore,1.0,1.0,0.48284430326690425
+Near threshold,EducationLevel,1.0,0.0,0.24356182207798271

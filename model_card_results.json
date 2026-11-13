@@ -1,0 +1,381 @@
+{
+  "sklearn": "1.8.0",
+  "sha256": "1964f081f1d01fd3df9701d9a48cf3153782d43c75a290b6277074ec6e1ce7fc",
+  "n": 1500,
+  "positive": 465,
+  "missing": 183,
+  "splits": [
+    {
+      "fold": 1,
+      "train": 1200,
+      "test": 300,
+      "chosen": "Gradient Boosting",
+      "models": [
+        {
+          "name": "Dummy",
+          "params": {},
+          "cut": 0.31,
+          "inner_ap": 0.31
+        },
+        {
+          "name": "Logistic Regression",
+          "params": {
+            "model__C": 1
+          },
+          "cut": 0.17108698455943824,
+          "inner_ap": 0.5842596394840179
+        },
+        {
+          "name": "Gradient Boosting",
+          "params": {
+            "model__max_depth": 1,
+            "model__n_estimators": 100
+          },
+          "cut": 0.16869913495311964,
+          "inner_ap": 0.6252756624562061
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "train": 1200,
+      "test": 300,
+      "chosen": "Gradient Boosting",
+      "models": [
+        {
+          "name": "Dummy",
+          "params": {},
+          "cut": 0.31,
+          "inner_ap": 0.31
+        },
+        {
+          "name": "Logistic Regression",
+          "params": {
+            "model__C": 0.1
+          },
+          "cut": 0.18238179260979917,
+          "inner_ap": 0.5856906900606886
+        },
+        {
+          "name": "Gradient Boosting",
+          "params": {
+            "model__max_depth": 2,
+            "model__n_estimators": 50
+          },
+          "cut": 0.15795210486598063,
+          "inner_ap": 0.6188313578176456
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "train": 1200,
+      "test": 300,
+      "chosen": "Gradient Boosting",
+      "models": [
+        {
+          "name": "Dummy",
+          "params": {},
+          "cut": 0.31,
+          "inner_ap": 0.31
+        },
+        {
+          "name": "Logistic Regression",
+          "params": {
+            "model__C": 10
+          },
+          "cut": 0.17056745096952022,
+          "inner_ap": 0.5846184742754374
+        },
+        {
+          "name": "Gradient Boosting",
+          "params": {
+            "model__max_depth": 2,
+            "model__n_estimators": 50
+          },
+          "cut": 0.17224763250791805,
+          "inner_ap": 0.6244595852484823
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "train": 1200,
+      "test": 300,
+      "chosen": "Gradient Boosting",
+      "models": [
+        {
+          "name": "Dummy",
+          "params": {},
+          "cut": 0.31,
+          "inner_ap": 0.31
+        },
+        {
+          "name": "Logistic Regression",
+          "params": {
+            "model__C": 10
+          },
+          "cut": 0.17159451058112982,
+          "inner_ap": 0.5676184884217312
+        },
+        {
+          "name": "Gradient Boosting",
+          "params": {
+            "model__max_depth": 2,
+            "model__n_estimators": 50
+          },
+          "cut": 0.16773794036646325,
+          "inner_ap": 0.6114758035205637
+        }
+      ]
+    },
+    {
+      "fold": 5,
+      "train": 1200,
+      "test": 300,
+      "chosen": "Gradient Boosting",
+      "models": [
+        {
+          "name": "Dummy",
+          "params": {},
+          "cut": 0.31,
+          "inner_ap": 0.31
+        },
+        {
+          "name": "Logistic Regression",
+          "params": {
+            "model__C": 0.1
+          },
+          "cut": 0.19484710381872344,
+          "inner_ap": 0.5674273072670081
+        },
+        {
+          "name": "Gradient Boosting",
+          "params": {
+            "model__max_depth": 2,
+            "model__n_estimators": 50
+          },
+          "cut": 0.1676967604293534,
+          "inner_ap": 0.6121274125040155
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "Dummy": {
+      "n": 1500,
+      "tp": 465,
+      "fp": 1035,
+      "fn": 0,
+      "tn": 0,
+      "ap": 0.31,
+      "brier": 0.21389999999999995
+    },
+    "Logistic Regression": {
+      "n": 1500,
+      "tp": 419,
+      "fp": 695,
+      "fn": 46,
+      "tn": 340,
+      "ap": 0.5710871365423238,
+      "brier": 0.18218293203936917
+    },
+    "Gradient Boosting": {
+      "n": 1500,
+      "tp": 419,
+      "fp": 683,
+      "fn": 46,
+      "tn": 352,
+      "ap": 0.6140913528152192,
+      "brier": 0.17459981975296412
+    },
+    "Selected": {
+      "n": 1500,
+      "tp": 419,
+      "fp": 683,
+      "fn": 46,
+      "tn": 352,
+      "ap": 0.6140913528152192,
+      "brier": 0.17459981975296412
+    }
+  },
+  "groups": {
+    "Gender 0": {
+      "n": 762,
+      "tp": 207,
+      "fp": 347,
+      "fn": 30,
+      "tn": 178,
+      "ap": 0.5838435969357321,
+      "brier": 0.18102093494187696
+    },
+    "Gender 1": {
+      "n": 738,
+      "tp": 212,
+      "fp": 336,
+      "fn": 16,
+      "tn": 174,
+      "ap": 0.6516075449418479,
+      "brier": 0.16796988780994035
+    },
+    "20–29": {
+      "n": 490,
+      "tp": 145,
+      "fp": 218,
+      "fn": 11,
+      "tn": 116,
+      "ap": 0.5853372857134999,
+      "brier": 0.18318287988190726
+    },
+    "30–39": {
+      "n": 446,
+      "tp": 118,
+      "fp": 202,
+      "fn": 12,
+      "tn": 114,
+      "ap": 0.6028198321700103,
+      "brier": 0.1676361814273741
+    },
+    "40+": {
+      "n": 564,
+      "tp": 156,
+      "fp": 263,
+      "fn": 23,
+      "tn": 122,
+      "ap": 0.6528692696911407,
+      "brier": 0.1726496127140121
+    }
+  },
+  "pfi_mean": [
+    0.1694465781084227,
+    0.06655242683464359,
+    0.0987351200003831,
+    0.09619943472489567
+  ],
+  "pfi_sd": [
+    0.03416424352238035,
+    0.02269160978395591,
+    0.035265125642541764,
+    0.03651249590957659
+  ],
+  "features": [
+    "EducationLevel",
+    "ExperienceYears",
+    "InterviewScore",
+    "SkillScore"
+  ],
+  "cases": [
+    {
+      "type": "TP",
+      "row": 570,
+      "fold": 2,
+      "cut": 0.15795210486598063,
+      "p": 0.16064787418211215,
+      "base": 0.3101153252666071,
+      "phi": [
+        -0.07014281749749628,
+        0.030464197155523065,
+        -0.046247491192000736,
+        -0.06354133955052098
+      ],
+      "residual": 2.7755575615628914e-17,
+      "top_same": 8,
+      "replica_sd": [
+        0.006612924975377107,
+        0.004816222016775872,
+        0.008819234258139878,
+        0.00813604004535392
+      ],
+      "inputs": {
+        "EducationLevel": 2.0,
+        "ExperienceYears": 10.0,
+        "InterviewScore": 19.0,
+        "SkillScore": 21.0
+      }
+    },
+    {
+      "type": "FP",
+      "row": 1011,
+      "fold": 2,
+      "cut": 0.15795210486598063,
+      "p": 0.1604887913530466,
+      "base": 0.3101153252666071,
+      "phi": [
+        -0.06777611081287013,
+        0.030769884057848224,
+        -0.0816358144783769,
+        -0.03098449268016174
+      ],
+      "residual": 2.7755575615628914e-17,
+      "top_same": 7,
+      "replica_sd": [
+        0.006841166268931481,
+        0.00484748039062548,
+        0.010760077415655987,
+        0.008633408676423364
+      ],
+      "inputs": {
+        "EducationLevel": 2.0,
+        "ExperienceYears": 7.0,
+        "InterviewScore": 66.0,
+        "SkillScore": 50.0
+      }
+    },
+    {
+      "type": "FN",
+      "row": 1400,
+      "fold": 1,
+      "cut": 0.16869913495311964,
+      "p": 0.16683556581559145,
+      "base": 0.3100313770136068,
+      "phi": [
+        -0.059368554617056236,
+        -0.08527732769806542,
+        0.10302605447368718,
+        -0.10157598335658084
+      ],
+      "residual": 0.0,
+      "top_same": 5,
+      "replica_sd": [
+        0.011539774285393833,
+        0.0054262229885366185,
+        0.00578260477544739,
+        0.010387430974989082
+      ],
+      "inputs": {
+        "EducationLevel": 2.0,
+        "ExperienceYears": 5.0,
+        "InterviewScore": 80.0,
+        "SkillScore": 8.0
+      }
+    },
+    {
+      "type": "Near threshold",
+      "row": 310,
+      "fold": 5,
+      "cut": 0.1676967604293534,
+      "p": 0.1676444615271979,
+      "base": 0.3101057306026773,
+      "phi": [
+        -0.04893180778431899,
+        -0.058496722415282455,
+        -0.05937448219396251,
+        0.024341743318084537
+      ],
+      "residual": 0.0,
+      "top_same": 6,
+      "replica_sd": [
+        0.008142021615605838,
+        0.0035626163989945564,
+        0.008859968529175434,
+        0.0077907919637913645
+      ],
+      "inputs": {
+        "EducationLevel": 2.0,
+        "ExperienceYears": 3.0,
+        "InterviewScore": 65.0,
+        "SkillScore": 62.0
+      }
+    }
+  ]
+}

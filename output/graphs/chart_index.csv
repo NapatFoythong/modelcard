@@ -1,0 +1,9 @@
+﻿number,filename,title,description
+1,01_เปรียบเทียบคุณภาพโมเดล.png,เปรียบเทียบคุณภาพโมเดล,Average Precision สูงดี ส่วน Brier score ต่ำดี
+2,02_ความผิดพลาดและการกระจายค่าทำนาย.png,ความผิดพลาดและการกระจายค่าทำนาย,Confusion matrix และค่าความน่าจะเป็นแยกตามฉลากจริง
+3,03_PFI — ความสำคัญของตัวแปร.png,PFI — ความสำคัญของตัวแปร,AP ลดลงเท่าไรเมื่อสุ่มสลับตัวแปร แถบแสดง ±1 SD ไม่ใช่ confidence interval
+4,04_Fairness พร้อม Wilson 95% CI.png,Fairness พร้อม Wilson 95% CI,"FNR, FPR และสัดส่วนเสนอทบทวนรายกลุ่ม ช่วงนี้ไม่รวมความไม่แน่นอนจากการฝึกใหม่"
+5,05_ALE — คะแนนทักษะ.png,ALE — คะแนนทักษะ,รูปแบบคะแนนตามทักษะ แยก fold พร้อมจำนวนข้อมูลในช่วง; ไม่ใช่ผลเชิงเหตุและผล
+6,06_SHAP waterfall — FN.png,SHAP waterfall — FN,แถว CSV 1400: จากค่าฐานชุดฝึก บวกผลตัวแปรจนถึงค่าทำนาย พร้อมเส้น threshold
+7,07_LIME — Fidelity และความเสถียร.png,LIME — Fidelity และความเสถียร,Weighted R² จากแพ็กเกจ lime บน neighborhood ที่ใช้ fit และ SD ของน้ำหนักข้าม 10 seeds
+8,08_LIME เทียบ SHAP — Near threshold.png,LIME เทียบ SHAP — Near threshold,ซ้ายคือน้ำหนักการอยู่ในช่วงค่าจากแพ็กเกจ lime จริง; ขวาคือ SHAP attribution ทั้งสองใช้คำถามอ้างอิงต่างกัน
